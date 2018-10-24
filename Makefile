@@ -6,16 +6,16 @@ CFLAGS=-Wall -Werror
 LDFLAGS=-lm
 
 
-all:  pscheme
+all:  scheme24
 
-pscheme: $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o pscheme $(LDFLAGS)
+scheme24: $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o scheme24 $(LDFLAGS)
 
 docs:
 	doxygen
 
 clean:
-	rm -f *.gch *.o *~ pscheme
+	rm -f *.gch *.o *~ scheme24
 	rm -rf docs/html
 
 .PHONY: all clean docs
